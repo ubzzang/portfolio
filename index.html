@@ -1,312 +1,191 @@
-<!DOCTYPE html>
-<html lang="kr">
-
+<!doctype html>
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-	<title>youb Portfolio</title>
-
-	<!--[if lt IE 9]>
-      <script src="./js/html5.js"></script>
-   <![endif]-->
-	<link href="css/common.css" rel="stylesheet" type="text/css">
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/colorbox.css" rel="stylesheet">
-
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script>
+<meta charset="utf-8">
+<title>COFFEESMITH</title>
+<link href="css/notosanskr.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<div id="wrap">
-		<div id="header">
-			<section class="mac-bar">
-				<div class="mac-bar-left">
-					<ul class="mac-bar-item">
-						<li><img src="img/top_icon.png"></li>
-						<li class="strong">Youb</li>
-						<li class="mac-bar-menu">
-							<button>File</button>
-							<ul class="dropdown">
-								<li class="dropdown-item about-click">About</li>
-								<li class="dropdown-item web-click">Web Project</li>
-								<li class="dropdown-item app-click">App Project</li>
-								<li class="dropdown-item image-click">Images</li>
-							</ul>
-						</li>
-						<li class="mac-bar-menu">
-							<button>Contact</button>
-							<ul class="dropdown">
-								<li class="dropdown-item">am_o_o@naver.com</li>
-								<li class="dropdown-item">
-									010-4458-6076
-								</li>
-							</ul>
-						</li>
-						<li class="mac-bar-menu setting">
-							<button>Setting</button>
-						</li>
-					</ul>
-				</div>
-				<div class="mac-bar-right">
-					<ul class="mac-bar-item">
-						<li>am_o_o@naver.com</li>
-						<li>
-							<span id="clock"></span>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<nav class="top-nav">
-				<ul>
-					<li class="top-nav-item about-click">
-						<div>
-							<img src="img/about.png">
-							<h2 class="top-nav-title">About</h2>
-						</div>
-					</li>
-					<li class="top-nav-item web-click">
-						<div>
-							<img src="img/projects.png">
-							<h2 class="top-nav-title">Web Projects</h2>
-						</div>
-					</li>
-					<li class="top-nav-item app-click">
-						<div>
-							<img src="img/projects.png">
-							<h2 class="top-nav-title">App Projects</h2>
-						</div>
-					</li>
-					<li class="top-nav-item image-click">
-						<div>
-							<img src="img/pic.png">
-							<h2 class="top-nav-title">Images</h2>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<main>
-			<div id="folder-wrap">
-				<div class="folder-open draggable" id="setting">
-					<h2 class="folder-title"><span>Setting</span></h2>
-					<button class="close"></button>
-					<section class="folder-content">
-						<section class="setting-first">
-							<h3>Change Background-color</h3>
-							<div class="color-list">
-								<button class="color-list-color" id="pink"></button>
-								<button class="color-list-color" id="green"></button>
-								<button class="color-list-color" id="yellow"></button>
-								<button class="color-list-color" id="blue"></button>
-								<button class="color-list-color" id="black"></button>
-								<button class="color-list-color" id="check"></button>
-							</div>
-						</section>
-					</section>
-				</div>
-				<div class="folder-open draggable" id="desktop-image">
-					<h2 class="folder-title">
-						<span>Youb</span>
-					</h2>
-					<button class="close">
-					</button>
-					<section class="folder-content">
-					</section>
-				</div>
-				<div class="folder-open draggable" id="about">
-					<h2 class="folder-title">
-						<span>About</span>
-					</h2>
-					<button class="close">
-					</button>
-					<section class="folder-content">
-						<nav class="about-btn">
-							<ul>
-								<li class="active">
-									<span>About me</span>
-									<div class="list-shadow"></div>
-								</li>
-								<li>
-									<span>Skill</span>
-									<div class="list-shadow"></div>
-								</li>
-								<li>
-									<span>License</span>
-									<div class="list-shadow"></div>
-								</li>
-							</ul>
-						</nav>
-						<div class="about-wrap">
-							<section class="active">
-								<div class="about-image"></div>
-								<div class="about-intro">
-									<p class="strong">Lee youbin v.26</p>
-									<p>Kyungsung University,Computer Engineering</p>
-									<p>Web designer, UI/UX designer</p>
-									<p>E-mail:am_o_o@naver.com</p>
-									<p>Call:010 4458 6076</p>
-								</div>
-							</section>
-							<section>
-								<p>
-									photoshop, illust, adobeXD
-								</p>
-								<p>
-									html5, css, jQuery
-								</p>
-								<p>Web image, Web coding, Responsive web,App design, App prototype</p>
-							</section>
-							<section class="licens-wrap scrollbar">
-								<div class="licens-wrap-content">
-									<div class="license-img"></div>
-									<div class="license-intro">
-										<p>웹디자인 기능사(필기)</p>
-										<p>2018.09</p>
-										<p>한국산업인력공단</p>
-									</div>
-								</div>
-								<div class="licens-wrap-content">
-									<div class="license-img" id="school"></div>
-									<div class="license-intro">
-										<p>스마트기기 UX/UI 디자인(디지털디자인) 구직자과정</p>
-										<p>2018.07 ~ 2018.11</p>
-										<p>그린컴퓨터 아카데미</p>
-									</div>
-								</div>
-								<div class="licens-wrap-content">
-									<div class="license-img" id="career"></div>
-									<div class="license-intro">
-										<p>아이오랩</p>
-										<p>2019.03 ~ 2019.12</p>
-										<p>웹디자인</p>
-									</div>
-								</div>
-								<div class="licens-wrap-content">
-									<div class="license-img" id="career"></div>
-									<div class="license-intro">
-										<p>바바세라믹</p>
-										<p>2018.11 ~ 2019.02</p>
-										<p>웹디자인</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</section>
-				</div>
-				<div class="folder-open draggable" id="web-projects">
-					<h2 class="folder-title">
-						<span>Web Projects</span>
-					</h2>
-					<button class="close"></button>
-					<section class="folder-content project-grid">
-						<ul class="project-list">
-							<li class="project-list-item">
-								<a href="make/index.html" target="_blank">
-									<img src="img/MAKEUP.png">
-									<h2 class="project-title">MAKE UP<br>FOR EVER</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="coffee/index.html" target="_blank">
-									<img src="img/coffee.png">
-									<h2 class="project-title">COFFEESMITH</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="rora/index.html" target="_blank">
-									<img src="img/rora.png">
-									<h2 class="project-title">RORA</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="TTWALLET/index.html" target="_blank">
-									<img src="img/ttwallet.png">
-									<h2 class="project-title">TTWALLET</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="lucky/login.html" target="_blank">
-									<img src="img/lucky.png">
-									<h2 class="project-title">Lucky7</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="http://iofood.kr/index.do" target="_blank">
-									<img src="img/io.png">
-									<h2 class="project-title">iofood</h2>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</div>
-				<div class="folder-open draggable" id="app-projects">
-					<h2 class="folder-title">
-						<span>App Projects</span>
-					</h2>
-					<button class="close">
-					</button>
-					<section class="folder-content project-grid">
-						<ul class="project-list">
-							<li class="project-list-item">
-								<a href="app/FLYER.png" rel="ppr2" class="ppt2">
-									<img src="img/radio.png">
-								<h2 class="project-title">Flyer</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="./app/illyong.png" rel="ppt1" class="ppt1">
-									<img src="img/illyong.png">
-									<h2 class="project-title">Job</h2>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</div>
-				<div class="folder-open draggable" id="images">
-					<h2 class="folder-title">
-						<span>Images</span>
-					</h2>
-					<button class="close"></button>
-					<section class="folder-content project-grid">
-						<ul class="project-list">
-							<li class="project-list-item">
-								<a href="img/img1.jpg" class="img1" rel="img1">
-									<img src="img/kakao.png">
-									<h2 class="project-title">Kakao x Lottemart</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="img/img2.jpg" class="img2" rel="img2">
-									<img src="img/lotte.png">
-									<h2 class="project-title">Lotte Duty Free</h2>
-								</a>
-							</li>
-							<li class="project-list-item">
-								<a href="img/img3.jpg" class="img3" rel="img3">
-									<img src="img/amore.png">
-									<h2 class="project-title">Amore Pacific</h2>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<div id="bottom">
-				<p class="icon1"></p>
-				<p class="icon2"></p>
-				<p class="icon3"></p>
-				<p class="icon4"></p>
-				<p class="icon5"></p>
-				<p class="icon6"></p>
-			</div>
-		</footer>
-	</div>
-	<script src="js/jquery.colorbox.js"></script>
-	<script src="js/index.js"></script>
-</body></html>
+<div id="wrap">
+	<header id="header">
+    	<div id="headerin">
+        	<h1 class="logo"><a href="#">로고</a></h1>
+            <nav class="gnb">
+            	<ul>
+            		<li class="d1">
+                    <a href="#">Product</a>
+                        <div class="d2">
+                            <ul>
+                                <li><a href="#">원두이야기</a></li>
+                                <li><a href="#">에스프레쏘/커피</a></li>
+                                <li><a href="#">케이크/디저트</a></li>
+                                <li><a href="#">프라푸치노/음료</a></li>
+                                <li><a href="#">티/허브티</a></li>
+                                <li><a href="#">MD상품</a></li>
+                            </ul>
+                    </div>
+                    </li><!--Product-->
+                    <li class="d1">
+                    	<a href="#">Playground</a>
+                        <div class="d2">
+                        	<ul>
+                            	<li><a href="#">뉴스</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </div>
+                    </li> <!--Playground-->
+                    <li class="d1">
+                    	<a href="#">About Us</a>
+                        <div class="d2">
+                        	<ul>
+                            	<li><a href="#">CoffeSmith</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">Send Message</a></li>
+                            </ul>
+                        </div>
+                    </li> <!--Aboutus-->
+                    <li class="d1">
+                    	<a href="#">Franchise</a>
+                        <div class="d2">
+                        	<ul>
+                            	<li><a href="#">가맹문의/Q&amp;A</a></li>
+                                <li><a href="#">가맹절차/개설비용</a></li>
+                                <li><a href="#">인테리어 컨셉</a></li>
+                            </ul>
+                        </div>
+                    </li> <!--franchise-->
+                    <li class="d1">
+                    	<a href="#">Oversea</a>
+                        <div class="d2">
+                        	<ul>
+                            	<li><a href="#">해외매장</a></li>
+                                <li><a href="#">해외매장 뉴스</a></li>
+                            </ul>
+                        </div>
+                    </li> <!--oversea-->
+                </ul>
+            </nav>
+        </div> <!--#headerin-->
+        <div class="gnb_bg"></div>
+    </header> <!--#header-->
+    <div id="container">
+    	<div class="mainSlide">
+        	<ul class="msImg">
+            	<li class="ms1"><a href="#"></a></li>
+                <li class="ms2"><a href="#"></a></li>
+                <li class="ms3"><a href="#"></a></li>
+            </ul>
+        </div> <!--.mainSlide-->
+        <div class="card">
+        	<div class="cardImg"><a href="#">
+            카드혜택자세히보기
+            </a></div>
+        </div> <!--card-->
+        <div class="new">
+        	<h3>WHAT'S NEW</h3>
+            <ul>
+            	<li><a href="#">
+                	<p class="photo"><img src="img/food_09.jpg"></p>
+                    <p class="menu">인절미 스노우 쉐이크</p>
+                </a></li>
+                <li><a href="#">
+                	<p class="photo"><img src="img/food_11.jpg"></p>
+                    <p class="menu">인절미 와플</p>
+                </a></li>
+                <li><a href="#">
+                	<p class="photo"><img src="img/food_13.jpg"></p>
+                    <p class="menu">티라미스 젤라또</p>
+                </a></li>
+            </ul>
+        </div> <!--.new-->
+        <div class="event">
+        	<h3>EVENT</h3>
+            <ul>
+            	<li><a href="#">
+                	<p class="photo"><img src="img/event_07.png"></p>
+                </a></li>
+                <li><a href="#">
+                	<p class="photo"><img src="img/event_09.png"></p>
+                </a></li>
+            </ul>
+        </div> <!--.event-->
+        <div class="find">
+        	<p class="img">사진</p>
+            <div class="text">
+            	<p class="t1">Experience the CoffeSmith</p>
+                <p class="t2">가장 가까운 곳에서 커피스미스를 경험하세요.</p>
+                <p class="t3">현대화된 최적의 공간에서 최고의 커피와 함께하는 커피스미스<br>
+                지금 당신 옆에 있는 커피스미스를 경험해 보세요</p>
+            </div>
+            <div class="box">
+            	<form>
+                	<input type="text" placeholder="매장찾기">
+                    <button>검색하기</button>
+                </form>
+            </div>
+        </div><!--.find-->
+        <div class="coffee">
+        	<p class="img">커피사진</p>
+        </div>
+        <div class="franchise">
+            <p class="txt">
+            커피스미스는 국내 커피전문점 브랜드 가운데 유일하게 건물 전체를 다루는 건축 디자인으로 브랜드 가치를 구축해왔습니다.<br>
+            신사동 커피스미스는 2009년 강남구 아름다운 건축상을 수상한 경력이 있으며, 국내 커피전문점에서는 최초로 1,2층 대형 규모의<br> 
+            통창 폴딩도어를 개발하여 최신 트랜드를 주도하는 건축디자인을 도입해왔습니다.<br>
+            커피스미스만의 현대화된 최적의 공간, 자유로운 복합 문화공간으로 여러분을 초대합니다.<br> 
+            </p>
+            <p class="text">Find a Partnership</p>
+            <p class="icon"><a href="#">아이콘</a></p>
+        </div><!--.franchise-->
+    </div> <!--#container-->
+    <footer id="footer">
+    	<div id="footerin">
+        	<h1 class="f_logo"><a href="#">로고</a></h1>
+            <div class="f_info">
+            	Address : 서울시 강남구 테헤란로 8길 25 커피스미스 빌딩
+                <span>l</span>
+                Tel : 02-3446-9383
+                <span>l</span>
+                Fax : 02-3446-9384
+                <br>
+                사업자등록번호 : 211-88-53973
+                <span>l</span>
+                대표이사 : 손태영
+            </div>
+            <div class="f_menu">
+                <p><a href="#">이메일 수집거부</a></p>
+                <p class="span">l</p>
+                <p><a href="#">개인정보 취급방침</a></p>
+                <p class="span">l</p>
+                <p><a href="#">인트라넷</a></p>
+                <p class="span">l</p>
+                <p><a href="#">사이트맵</a></p>
+            </div>
+            <div class="copyright">
+            	ⓒ2018 coffeesmith all rights reserved
+            </div>
+            <div class="sns">
+                <ul>
+                    <li class="facebook"><a href="#">
+                        <p class="icon"></p>
+                    </a></li>
+                    <li class="insta"><a href="#">
+                        <p class="icon"></p>
+                    </a></li>
+                    <li class="youtube"><a href="#">
+                        <p class="icon"></p>
+                    </a></li>
+                </ul>
+            </div>
+        </div> <!--#footerin-->
+    </footer><!--footer-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
