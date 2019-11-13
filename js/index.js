@@ -1,4 +1,4 @@
-//폴더드래그
+﻿//폴더드래그
 $(function () {
 	$(".draggable").draggable({
 		cursor: "move",
@@ -83,7 +83,7 @@ $("#black").click(function () {
 	$(".top-nav-title").css('color','#fff');
 });
 $("#check").click(function () {
-	$("#wrap").css('background-image', 'url(../img/check.png)');
+	$("#wrap").css('background-image', 'url(img/check.png)');
 	$(".top-nav-title").css('color','#000');
 });
 
