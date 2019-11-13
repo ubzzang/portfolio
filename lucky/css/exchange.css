@@ -1,0 +1,771 @@
+#wrap {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background-color: #222;
+	overflow: hidden;
+}
+
+.inner {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*header*/
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 96px;
+	background-color: #333;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	z-index: 20;
+	font-size: 0;
+}
+
+header .inner {
+	padding: 8px 0;
+}
+
+.util {
+	width: 100%;
+	height: 32px;
+	text-align: right;
+}
+
+.util li {
+	display: inline-block;
+	margin-left: 16px;
+	font-size: 20px;
+	line-height: 32px;
+	color: #ddd;
+}
+
+.util .id {
+	color: #00b8de;
+	font-weight: bold;
+}
+
+.util li:first-child {
+	margin: 0;
+}
+
+.util li a {
+	font-size: 16px;
+	line-height: 32px;
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+nav {
+	width: 100%;
+	height: 48px;
+}
+
+nav h1 {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 8px 0;
+}
+
+header h1 a {
+	display: block;
+	height: 100%;
+}
+
+header h1 img {
+	height: 100%;
+	width: auto;
+}
+
+.gnb {
+	float: right;
+}
+
+.gnb li {
+	display: inline-block;
+	margin-left: 16px;
+	line-height: 48px;
+}
+
+.gnb li:first-child {
+	margin-left: 0;
+}
+
+.gnb li a {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.gnb .on a {
+	color: rgba(0, 184, 222, 1);
+}
+
+.gnb li:hover a,
+.util li:hover a {
+	color: rgba(0, 184, 222, 1);
+}
+
+/*section*/
+
+section {
+	padding-top: 96px;
+}
+
+section .inner {
+	padding: 40px 16px;
+}
+
+label,
+h3 {
+	display: block;
+	color: #fff;
+	padding: 8px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	width: 100%;
+	max-width: 320px;
+	font-size: 16px;
+	color: #00b8de;
+}
+
+input {
+	width: 100%;
+	border: 0;
+	outline: 0;
+	font-size: 20px;
+	background: rgba(255, 255, 255, .1);
+	border-radius: 4px;
+	color: #fff;
+	transition: all .2s;
+	display: block;
+	height: 56px;
+	line-height: 56px;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+}
+
+input[type=text],
+input[type=password] {
+	text-indent: 8px;
+}
+
+input::placeholder {
+	color: #bbb;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+input[type=button] {
+	cursor: pointer;
+}
+
+input.submit {
+	background: rgba(0, 184, 222, 0.8);
+}
+
+input.submit:hover {
+	background: rgba(0, 184, 222, 1);
+}
+
+/*index*/
+
+
+/*exchange*/
+
+#sec2 form {
+	font-size: 16px;
+	background: #373737;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	padding: 24px;
+}
+
+.top {
+	margin-bottom: 24px;
+}
+
+.top:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.top > div:first-child {
+	float: left;
+	width: 32%;
+}
+
+.tab {
+	width: 100%;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+.tab li {
+	width: 100%;
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.1);
+	transition: all 0.3s;
+	border-radius: 4px;
+}
+
+.tab li:hover {
+	background: rgba(0, 184, 222, 1);
+}
+
+.tab .on {
+	background: rgba(0, 184, 222, 1);
+	color: #fff;
+}
+
+.tab li span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.tab li:first-child {
+	margin-bottom: 8px;
+}
+
+.price {
+	text-align: center;
+	position: relative;
+	height: auto;
+}
+
+.price > div {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 24px;
+}
+
+.price div span {
+	font-size: 16px;
+	color: #fff;
+	margin: 0 8px;
+}
+
+.price img {
+	margin-bottom: 24px;
+	height: 180px;
+}
+
+.current {
+	text-align: left;
+	margin-bottom: 16px;
+}
+/*20190916 추가*/
+.waiting{
+	background: rgba(0, 184, 222, 1);
+	border-radius: 4px; font-size: 16px;
+	text-align: center; padding: 8px;
+}
+/*20190819 추가*/
+#total {
+	margin-bottom: 0;
+}
+
+.balance {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+}
+
+.account {
+	display: inline-block;
+	width: 58%;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.exInfo {
+	width: calc(68% - 8px);
+	float: right;
+	background: rgba(255, 255, 255, 0.03);
+	padding: 16px;
+}
+
+.exInfo > div {
+	margin-bottom: 16px;
+}
+
+.target {
+	width: calc(80% - 8px);
+	display: inline-block;
+}
+
+.copybtn {
+	width: 20%;
+	display: inline-block;
+	background: rgba(0, 184, 222, 0.8);
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.copybtn:hover {
+	background: rgba(0, 184, 222, 1);
+}
+
+p {
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.5px;
+	text-align: left;
+}
+
+.amount {
+	font-size: 0;
+}
+
+.amount > div {
+	width: 100%;
+	display: inline-block;
+	font-size: 20px;
+	text-align: right;
+}
+
+.amount > div:nth-child(2) {
+	margin-right: 24px;
+}
+
+.amount > div input {
+	width: 100%;
+	display: inline-block;
+	text-align: right;
+	text-indent: 0;
+	padding-right: 8px;
+}
+
+.amount input::placeholder {
+	font-size: 16px;
+}
+
+.amount span {
+	display: inline-block;
+	height: 56px;
+	line-height: 56px;
+}
+
+.table {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.table tbody {
+	display: block;
+	table-layout: fixed;
+	width: 100%;
+	max-height: 480px;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+.table thead {
+	width: calc(100% - 1em);
+}
+
+tr {
+	border-bottom: 1px solid #bbb;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+td,
+th {
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.5px;
+	padding: 6px 0;
+}
+
+th:first-child,
+td:first-child {
+	width: 50%;
+}
+
+th:nth-child(n+3):nth-child(-n+4),
+td:nth-child(n+3):nth-child(-n+4) {
+	width: 15%;
+}
+
+th {
+	background: #00b8de;
+}
+
+td {
+	padding-left: 1em;
+	overflow-x: auto;
+}
+
+/*myInfo*/
+.selconbox {
+	margin-bottom: 16px;
+	position: relative;
+	height: 35px;
+	width: 150px;
+	padding-top: 0;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 4px;
+}
+
+.selconbox.on {
+	overflow: visible;
+}
+
+.conlst {
+	position: absolute;
+	top: 38px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	z-index: 2;
+	transition: all 0.3s;
+}
+
+.selconbox.on .conlst {
+	height: 102px;
+	overflow-y: scroll;
+
+}
+
+.selconbox.on .conlst::-webkit-scrollbar {
+	width: 2px;
+	background: rgba(255, 255, 255, .1);
+}
+
+.selconbox.on .conlst::-webkit-scrollbar-thumb {
+	background: #ff8f58;
+	opacity: .4;
+}
+
+.selconbox.on .conlst::-webkit-scrollbar-track {
+	background: none;
+}
+
+.selconbox .selcon span > span {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 11px;
+	right: 8px;
+	transition: transform 0.3s;
+}
+
+.selconbox.on span > span {
+	transform: rotate(180deg);
+}
+
+.selconbox > div {
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.selconbox > div:nth-child(2) {
+	background-color: #1a3637;
+}
+
+.selconbox div div {
+	text-align: left;
+	padding: 6px;
+	cursor: pointer;
+	transition: all 0.2s;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.selconbox div div:hover {
+	background-color: #fff;
+	color: #1a3637;
+}
+
+.selconbox div div span {
+	display: inline-block;
+	padding: 4px 8px;
+	text-align: center;
+}
+
+.selconbox div div img {
+	height: 22px;
+	padding: 4px;
+}
+
+.myInfo > div {
+	margin-bottom: 16px;
+}
+
+
+/*footer*/
+footer {
+	width: 100%;
+	background: #222;
+	font-size: 16px;
+	color: #bbb;
+	text-align: right;
+	line-height: 40px;
+}
+
+select {
+	width: 100%;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	background-color: #f38a56;
+	border-radius: 4px;
+	color: #fff;
+	transition: all .2s;
+	display: block;
+	height: 56px;
+	line-height: 56px;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+	background: rgba(255, 255, 255, .1) url('../img/ic_arrow_drop_down_white_18dp.png') no-repeat 95% 50%;
+}
+
+option {
+	color: #222;
+}
+
+@media all and (max-width:1600px) {
+	#wrap {
+		width: 100%;
+	}
+
+	header .inner {
+		width: 100%;
+		padding: 8px 24px;
+	}
+
+	nav h1 {
+		left: 16px;
+	}
+
+}
+
+@media all and (max-width:1023px) {
+	.top > div:first-child {
+		width: 100%;
+		float: none;
+		font-size: 0;
+	}
+
+	.tab {
+		width: 50%;
+		display: inline-block;
+		font-size: 0;
+	}
+
+	.tab li {
+		width: calc(50% - 4px);
+		display: inline-block;
+		vertical-align: top;
+		height: 64px;
+	}
+
+	.tab li:first-child {
+		margin-right: 8px;
+		margin-bottom: 0;
+	}
+
+	.price {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 16px;
+		width: 100%;
+	}
+
+	.price > div {
+		height: 100%;
+		padding: 8px;
+		position: relative;
+		transform: none;
+		top: 0;
+	}
+
+	.price:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.price img {
+		display: none;
+	}
+
+	.price div div {
+		margin: 0;
+		line-height: 52px;
+	}
+
+	.current:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.account {
+		width: auto;
+		float: right;
+	}
+
+	.exInfo {
+		width: 100%;
+	}
+
+	td {
+		padding-left: 0;
+	}
+}
+
+@media all and (max-width:800px) {
+
+	#sec2 form {
+		padding: 16px;
+	}
+
+	.inner {
+		padding: 0 16px;
+	}
+
+	.price div div {
+		font-size: 24px;
+	}
+
+	.tab {
+		width: 100%;
+
+	}
+
+	.tab li {
+		height: 48px;
+	}
+
+	.price {
+		width: 100%;
+		margin-left: 0;
+		height: 130px;
+	}
+
+	.price img {
+		height: 80%;
+	}
+
+	.price div div {
+		line-height: 32px;
+	}
+
+	header h1 a {
+		display: block;
+		height: 70%;
+		margin-top: 10px;
+	}
+
+	header h1 img {
+		height: 100%;
+		width: auto;
+	}
+
+	nav h1 {
+		height: 96px;
+	}
+
+	nav h1 img {
+		width: auto;
+		height: 100%;
+	}
+
+	.util li {
+		font-size: 16px;
+	}
+
+	.util li a {
+		font-size: 16px;
+	}
+
+	.gnb li a {
+		font-size: 16px;
+	}
+
+	td,
+	th {
+		font-size: 12px;
+	}
+
+	.amount > div:nth-child(2) {
+		width: 100%;
+	}
+
+}
+
+@media all and (max-width:500px) {
+	.price img {
+		float: none;
+	}
+
+	.price div div {
+		font-size: 16px;
+	}
+
+	.price {
+		height: auto;
+	}
+
+	.price > div {
+		height: auto;
+	}
+
+	.balance {
+		width: 100%;
+	}
+
+	.account {
+		float: left;
+		margin: 0 8px !important;
+	}
+}
+
+@media all and (max-width:420px) {
+	.price div div {
+		font-size: 16px;
+	}
+
+	.target {
+		width: 100%;
+	}
+
+	.copybtn {
+		width: 100%;
+	}
+}
+
+@media all and (max-width:320px) {
+	header h1 a {
+		display: block;
+		height: 50%;
+		margin-top: 0;
+	}
+}

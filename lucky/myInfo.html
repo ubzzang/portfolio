@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>VESTA</title>
+
+	<!--	[if lt IE 9]>-->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  	<link href="./css/notosanskr.css" rel="stylesheet">
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/exchange.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrap">
+	<header>
+     <div class="inner">
+       <ul class="util">
+          <li class="id"><span>Hello</span>YouB</li>
+          <li><a href="#">logOut</a></li>
+        </ul>
+        <nav>
+         <h1><a href="./login.html"><img src="img/logo.png"></a></h1>
+          <ul class="gnb">
+            <li><a href="./login.html">Home</a></li>
+            <li><a href="./exchange.html">Exchange</a></li>
+            <li class="on"><a href="./myInfo.html">MyInfo</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+		<section id="sec3">
+    <div class="inner">
+		  <form>
+					<div class="selconbox">
+              <div class="selcon">
+                <div><span>Country code <span>▼</span></span></div>
+              </div>
+              <div class="conlst">
+                <div>
+                  <img src="./img/countries/USA.png" alt=""><span>USA +1</span>
+                </div>
+                <div>
+                  <img src="./img/countries/Malaysia.png" alt=""><span>MYS +60</span>
+                </div>
+                <div>
+                  <img src="./img/countries/philippines.png" alt=""><span>PHL +63</span>
+                </div>
+                <div>
+                  <img src="./img/countries/Taipei.png" alt=""><span>TAI +66</span>
+                </div>
+                <div>
+                  <img src="./img/countries/japan.png" alt=""><span>JPN +81</span>
+                </div>
+                <div>
+                  <img src="./img/countries/south-korea.png" alt=""><span>KOR +82</span>
+                </div>
+                <div>
+                  <img src="./img/countries/vietnam.png" alt=""><span>VNM +84</span>
+                </div>
+                <div>
+                  <img src="./img/countries/china.png" alt=""><span>CHN +86</span>
+                </div>
+              </div>
+            </div>
+					<div class="myInfo">
+				  	<div>
+              <label for="id">ID</label>
+              <input id="id" type="text" value="youb">
+						</div>
+
+						<div>
+              <label for="pw">PW</label>
+              <input id="pw" type="password" placeholder="Please enter your current password.">
+              <input type="password" placeholder="Please enter a new password.">
+              <input type="password" placeholder="Please enter a new password once more.">
+            </div>
+
+						<div>
+              <label for="tx">TX PW</label>
+              <input id="tx" type="password" ID="TXPW" placeholder="Please enter your current TX password.">
+              <input type="text" placeholder="Please enter a new TX password.">
+              <input type="text" placeholder="Please enter a new TX password once more.">
+           </div>
+              
+						<div>
+              <label for="first-name">NAME</label>
+              <input type="text" id="first-name" value="LEE">
+              <input type="text" id="last-name" value="YOUB">
+            </div>
+              
+            <div>
+              <label for="email">E-MAIL</label>
+              <input type="text" id="email" value="youb@nnnn.com">
+            </div>
+            
+						<div>
+						<label for="ph">PHONE NUMBER</label>
+						<input type="text" id="ph" value="010 - 1234 - 9876">  
+            </div>
+
+						<div>
+              <label for="recomm">RECOMMENDER ID</label>
+              <input type="text" id="recomm" value="recomender@gmail.com">
+					</div>
+					<input type="button" value="Submit" onclick="location.href='./login.html'" class="submit">
+				</form>
+				</div>
+		</section>
+		<footer>
+		  <div class="inner">
+			  © 2019 LUCKY7. All rights reserved.
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+		<script>
+    $(function() {
+      $('.selcon').on('click', function() {
+        $(this).parent().toggleClass('on');
+      });
+
+      $('.conlst > div').on('click', function() {
+        var country = $(this).html();
+
+        $(this).parent().parent().find('.selcon').children().children().remove();
+        $(this).parent().parent().find('.selcon').children().append(country);
+        $('.selconbox').removeClass('on');
+      });
+    });
+	</script>
+</body>
+</html>

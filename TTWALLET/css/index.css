@@ -1,0 +1,1227 @@
+@font-face {
+  font-family: godo;
+  src: url(../fonts/SDSwaggerTTF.ttf) format('truetype');
+}
+
+* {
+  font-family: 'godo', sans-serif;
+}
+
+.table-box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+}
+
+.table-box::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+}
+
+.table-box::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+#contents > div {
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 24px;
+  display: none;
+}
+
+#wrap > #contents > .infobar {
+  width: 100%;
+  height: 80px;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #222;
+  padding-bottom: 0;
+}
+
+.infobar .coinNM {
+  font-size: 32px;
+  vertical-align: middle;
+  margin-right: 24px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.infobar a {
+  color: #222;
+  vertical-align: middle;
+  margin-right: 24px;
+  padding: 4px;
+  transition: all 0.3s;
+}
+
+.infobar a:hover {
+  color: #ff4810;
+}
+
+.country {
+  display: inline-block;
+  text-align: center;
+  padding: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------------country select*/
+.select {
+  width: 70px;
+  height: 24px;
+  text-align: left;
+  font-size: 16px;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  top: 28px;
+  z-index: 20;
+  border-radius: 12px;
+}
+
+.select:hover {
+  border-radius: 0;
+}
+
+.selectWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.select a {
+  color: #fff;
+}
+
+.select > div > div {
+  width: 100%;
+  height: 24px;
+  padding-left: 40px;
+  background-size: 16px;
+  transition: all 0.3s;
+}
+
+.select > div > .sel0 {
+  padding: 5px;
+  text-align: center;
+}
+
+.sel1:hover,
+.sel2:hover,
+.sel3:hover,
+.sel4:hover {
+  background-color: orange;
+}
+
+.sel1 {
+  background: url(../img/sel/south-korea.png) no-repeat left 5px center;
+}
+
+.sel2 {
+  background: url(../img/sel/united-states.png) no-repeat left 5px center;
+}
+
+.sel3 {
+  background: url(../img/sel/japan.png) no-repeat left 5px center;
+}
+
+.sel4 {
+  background: url(../img/sel/china.png) no-repeat left 5px center;
+}
+
+/*---------------------------------------------------------------country select*/
+.infobar h1 {
+  float: right;
+}
+
+#contents > div.on {
+  display: block;
+}
+
+html {
+  background-color: #fcfcfc;
+  max-width: 2000px;
+  overflow: hidden;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 2000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#gnb {
+  width: 120px;
+  height: 100vh;
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+  transition: all 0.6s;
+}
+
+#gnb > div {
+  float: left;
+  padding: 24px 0;
+}
+
+.navL {
+  width: 120px;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid #222;
+  background-color: #ff4810;
+  position: relative;
+  z-index: 2;
+}
+
+#gnb h1 {
+  margin: 24px 0 32px 0;
+  height: 66px;
+}
+
+#gnb h1 img {
+  height: 100%;
+}
+
+#navR .ETH .on {
+  display: none;
+}
+
+.navL li {
+  width: 100%;
+  height: 100px;
+  transition: all 0.2s;
+}
+
+#gnb li:hover,
+#gnb div .on {
+  background-color: #ebebeb;
+  color: #222;
+  cursor: pointer;
+}
+
+.navL .coins {
+  background: url(../img/coin1_1.png) no-repeat center;
+}
+
+.navL .trans {
+  background: url(../img/coin2_1.png) no-repeat center;
+}
+
+.navL .info {
+  background: url(../img/coin3_1.png) no-repeat center;
+}
+
+.navL .coins:hover,
+.navL .coins.on {
+  background: url(../img/coin1_2.png) no-repeat center;
+}
+
+.navL .exchange:hover,
+.navL .trans.on {
+  background: url(../img/coin2_2.png) no-repeat center;
+}
+
+.navL .profile:hover,
+.navL .info.on {
+  background: url(../img/coin3_2.png) no-repeat center;
+}
+
+.navR {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(120deg, #444, #222);
+  transition: all 0.3s;
+}
+
+.navR ul {
+  height: calc(100% - 120px);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.navR li {
+  padding: 8px 16px;
+  color: #ccc;
+  position: relative;
+  transition: all 0.3s;
+}
+
+#contents {
+  background-color: #fcfcfc;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 120px);
+  height: 100vh;
+  padding: 24px;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: all 0.6s;
+}
+
+#contents.on {
+  width: calc(100% - 320px);
+}
+
+#contents article {
+  color: black;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s;
+  display: none;
+}
+
+#contents article.on {
+  display: block;
+}
+
+#contents article:last-child {
+  margin-bottom: 0;
+}
+
+.greeting {
+  font-size: 24px;
+}
+
+/*ttc코인*/
+/*-----------------------------------------------------------------ttc*/
+
+.walletinfo {
+  font-size: 0;
+}
+
+.walletinfo > div {
+  display: inline-block;
+  width: calc((100% - 24px) / 2);
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.WIleft {
+  margin-right: 24px;
+  position: relative;
+}
+
+.WIleft,
+.WIright > div {
+  background: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.WIright > div:first-child {
+  margin-bottom: 24px;
+}
+
+.ex001 h5 {
+  font-size: 40px;
+  background: #333;
+  color: #fff;
+  padding: 8px 24px 4px 24px;
+  margin-bottom: 16px;
+  line-height: 1em;
+  border-radius: 4px;
+}
+
+.ex001 h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ex001 h2 img {
+  height: 179px;
+}
+
+.ex001 h3 {
+  font-size: 72px;
+  text-align: center;
+  color: #ff4810;
+}
+
+.ex001 h4 {
+  font-size: 40px;
+  text-align: center;
+  color: #fe7a53;
+}
+
+.shift {
+  letter-spacing: 0.02em !important;
+}
+
+.shift button {
+  padding: 4px 16px 0px;
+  font-size: 24px;
+  background: #ccc;
+  color: #fff;
+  margin-right: 8px;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.shift button:hover {
+  background-color: #666;
+}
+
+.shift button.on {
+  display: inline-block;
+  background-color: #333;
+}
+
+.shift form {
+  margin-top: 8px;
+  display: none;
+}
+
+.shift form.on {
+  display: block;
+}
+
+.shift form input[type='text'],
+.shift form input[type='password'] {
+  outline: 0;
+  padding: 8px 24px;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.shift form p {
+  color: #ff4810;
+  text-align: right;
+  padding-right: 8px;
+  font-size: 12px;
+}
+
+.shift form input[type='button'] {
+  margin-top: 16px;
+  width: 100%;
+  font-size: 24px;
+  background: #fe7a53;
+  border: 0;
+  outline: 0;
+  padding-top: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.shift form input[type='button']:hover {
+  background-color: #ff4810;
+}
+
+/*-----------------------------------------------------------------ttc end*/
+
+/*이더코인*/
+article.ex002 {
+  font-size: 0;
+}
+
+#e_amount {
+  display: inline-block;
+  width: calc((100% - 24px)/2);
+  text-align: center;
+}
+
+#e_amount img {
+  margin-bottom: 20px;
+}
+
+#e_amount .txt1 {
+  margin-bottom: 5px;
+  font-size: 60px;
+  color: #ff4810;
+}
+
+#e_amount .txt2 {
+  font-size: 30px;
+  color: #febaa5;
+}
+
+#account_num {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+}
+
+.ex002 .box {
+  vertical-align: top;
+  display: inline-block;
+  width: calc((100% - 24px) / 2);
+}
+
+#account_num h1 {
+  margin-right: 0px;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+#account_num p {
+  font-size: 40px;
+}
+
+#send {
+  display: inline-block;
+  padding-top: 60px;
+}
+
+#send h1 {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #f6f6f6;
+}
+
+#send input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+fieldset:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#phone {
+  float: left;
+  width: 15% !important;
+  height: 30px !important;
+  margin-bottom: 0 !important;
+  padding: 5px;
+  border-bottom: none !important;
+  cursor: pointer;
+}
+
+#phone_num {
+  width: 85% !important;
+  float: left;
+}
+
+#certi_num {
+  float: left;
+  width: 15% !important;
+  height: 30px !important;
+  margin-bottom: 0 !important;
+  padding: 5px;
+  border-bottom: none !important;
+  cursor: pointer;
+}
+
+#certi {
+  width: 85% !important;
+  float: left;
+}
+
+#submit {
+  width: 100%;
+  height: 40px !important;
+  padding: 5px;
+  font-size: 30px;
+  line-height: 30px cursor: pointer;
+  margin-bottom: 0;
+}
+
+#send #phone:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+#send #certi_num:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+#submit:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.ex002 .inner h2 {
+  padding-bottom: 20px;
+  border-bottom: 5px solid #555;
+  text-align: center;
+  font-size: 30px;
+  color: #777;
+  padding-top: 30px;
+}
+
+caption {
+  position: absolute;
+}
+
+.table-box-wrap {
+  position: relative;
+  /*width:509px;*/
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 40px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.table-box-wrap .table-box {
+  max-height: 350px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.table-box-wrap .table-box table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table-box-wrap .table-box table thead tr {
+  position: absolute;
+  top: 0;
+}
+
+.table-box-wrap .table-box table thead tr th {
+  font-weight: normal;
+  height: 40px;
+  width: 200px;
+  background: #ff4810;
+  color: #fff;
+  font-size: 20px;
+}
+
+.table-box-wrap .table-box table td {
+  text-align: center;
+  height: 50px;
+  width: 120px;
+  border-top: 1px solid #ccc;
+}
+
+.table-box-wrap .table-box table tr {
+  display: inline-table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table-box-wrap .table-box table tbody tr {
+  display: table-row;
+  font-size: 20px;
+}
+
+
+/*교환*/
+.trans > h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+.trans h2 {
+  width: 100%;
+  padding: 8px 24px 4px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.transWrap {
+  font-size: 0;
+}
+
+.TRL,
+.TRM,
+.TRR {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.TRL,
+.TRR {
+  width: calc((100% - 100px) / 2);
+  padding: 16px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.TRM {
+  width: 52px;
+  height: 250px;
+  vertical-align: top;
+  position: relative;
+}
+.TRM img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TRR {
+  margin-right: 0;
+}
+
+.custom-select {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #333 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  font-size: 24px;
+  transition: all 0.3s;
+}
+
+.select-selected {
+  background-color: #fe7a53;
+  color: #fff;
+}
+
+.select-selected:hover {
+  background-color: #ff4810;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover {
+  background-color: #ff4810;
+  color: #fff;
+}
+
+.TRL input,
+.TRR input {
+  width: 100%;
+  font-size: 56px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  color: #333;
+  padding: 16px;
+  cursor: default;
+}
+
+.TRL input {
+  border: 5px dashed #333;
+  background-color: #fcfcfc;
+  cursor: text;
+  border-radius: 4px;
+}
+
+.RECIPT {
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-size: 0;
+  position: relative;
+}
+
+.SENDINFO,
+.PROOF {
+  width: 50%;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.SENDINFO {
+  border-right: 1px solid #333;
+  padding-left: 0;
+}
+
+.SENDINFO > div > div {
+  padding: 8px 16px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px dashed #333;
+  border-radius: 4px;
+  margin-top: 4px;
+  position: relative;
+  background-color: #fff;
+}
+
+.SENDINFO p {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #333;
+  font-size: 16px;
+  padding-left: 8px;
+  text-align: left;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+
+}
+
+.SENDINFO p:after {
+  content: "";
+  width: 100px;
+  border-bottom: 5px solid #333;
+  height: 1px;
+  display: block;
+  transform: translateX(-8px);
+}
+
+.SENDINFO span {
+  font-size: 32px;
+  margin-right: 8px;
+}
+
+.SNDB {
+  margin-bottom: 16px;
+}
+
+.RECIPT h3 {
+  font-size: 24px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin-bottom: 8px;
+}
+
+.SNDA > h3 {
+  background-color: #fe7a53;
+}
+.SNDA > div:nth-child(2){
+  background: rgba(255,0,0,0.05);
+}
+
+.PROOF {
+  padding-right: 0;
+  font-size: 0;
+}
+.PROOF input{
+  padding: 8px 16px;
+  border: 0;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px;
+  outline: 0;
+}
+.PROOF input[type='text']:nth-child(1){
+  width: calc(60% - 8px);
+  vertical-align: top;
+  margin-right: 8px;
+}
+.PROOF input[type='button']:nth-child(2){
+  width: 40%;
+  vertical-align: top;
+}
+.PROOF input[type='button']{
+  //background-color: #606060;
+  border: 3px dashed #333;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.PROOF input[type='button']:hover{
+  background-color: #333;
+  color: #fff;
+}
+.PROOF input[type='button']:last-child{
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  width: calc(50% - 16px);
+}
+.PROOF p{
+  font-size: 16px;
+  text-align: right;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  color: #ff4810;
+}
+.PROOF div{
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+/*회원정보*/
+#Profile h1 {
+  text-align: center;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f6f6;
+  font-size: 30px;
+  padding: 10px;
+}
+
+#Profile {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p_txt {
+  font-size: 20px;
+  margin: 2px;
+}
+
+.basic {
+  width: 480px;
+  height: 30px;
+  padding: 10px;
+  color: #999999;
+  margin-bottom: 10px;
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0;
+  border-bottom: 1px solid #555;
+}
+
+.m1 {
+  float: left;
+  margin-right: 40px;
+}
+
+.submit {
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #606060;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media all and (max-width:1000px) {
+  #gnb.on {
+    position: absolute;
+    transform: translateX(0);
+  }
+
+  #gnb {
+    transform: translateX(-120px);
+  }
+
+  #contents {
+    width: 100%;
+  }
+
+  #contents.on {
+    width: 100%;
+  }
+
+  #wrap > #contents > .infobar {
+    padding: 16px;
+    padding-bottom: 0;
+  }
+
+  .infobar .coinNM {
+    font-size: 24px;
+  }
+
+
+  #gnb .mobBtn {
+    position: absolute;
+    top: 56px;
+    right: -40px;
+    width: 40px;
+    height: 80px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+  .mobBtn > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 20px;
+  }
+
+  .mobBtn > div > div {
+    width: 24px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  .mobBtn > div > div:nth-child(1) {
+    top: 0;
+    transition: all 0.3s;
+  }
+
+  .mobBtn > div > div:nth-child(2) {
+    top: 8px;
+    transition: all 0.3s;
+  }
+
+  .mobBtn > div > div:nth-child(3) {
+    top: 16px;
+    transition: all 0.3s;
+  }
+
+  #gnb.on .mobBtn > div > div:nth-child(1) {
+    transform: rotate(-45deg);
+    width: 16px;
+    top: 2px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  #gnb.on .mobBtn > div > div:nth-child(2) {
+    border-radius: 4px;
+  }
+
+  #gnb.on .mobBtn > div > div:nth-child(3) {
+    transform: rotate(45deg);
+    width: 16px;
+    top: 14px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  #contents > div {
+    padding: 0;
+  }
+
+  .select {
+    top: 16px;
+    right: 16px;
+  }
+
+  .coinNM {
+    position: absolute;
+    top: 48px;
+  }
+
+  .greeting {
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    right: 68px;
+  }
+
+  .infobar h1 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 160px;
+    float: none;
+  }
+
+  .infobar h1 img {
+    width: 100%;
+  }
+
+  .infobar a {
+    margin-right: 0;
+  }
+
+  .infobar > span:nth-child(2) {
+    position: absolute;
+    top: 48px;
+    right: 16px;
+    border-left: 1px solid #333;
+  }
+
+
+  .walletinfo > div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .walletinfo > div:first-child {
+    margin-bottom: 24px;
+  }
+
+  .table-box-wrap .table-box table thead tr th {
+    width: auto;
+  }
+
+  .form > div {
+    width: 100%;
+  }
+
+  #e_amount {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .ex002 .box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #account_num {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #contents > .trans {
+    padding: 16px;
+  }
+
+  #trans {
+    width: auto;
+  }
+
+  #trans h1 {
+    width: auto;
+  }
+
+  .ex002 .inner h2 {
+    margin-bottom: 0;
+  }
+
+  #Profile {
+    padding: 12px;
+    width: auto;
+  }
+
+  .basic {
+    width: 100%;
+  }
+
+  #Profile h1 {
+    width: auto;
+  }
+  .TRL, .TRM, .TRR {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .TRL, .TRR {
+    width:100%;
+  }
+  .TRM{
+    height: 20px;
+    width: 100%;
+  }
+  .TRM img{
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .SENDINFO, .PROOF{
+    width: 100%;
+    padding: 16px 0;
+    border-right: 0;
+  }
+  .PROOF input[type='button']:last-child{
+    position: static;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .TRL input,
+  .TRR input,
+  .SENDINFO > div > div
+  {
+    text-align: right;
+  }
+}
+
+@media all and (max-width:700px) {
+  #contents {
+    padding: 16px;
+  }
+
+  #contents article {
+    width: calc(100% - 32px);
+    top: 16px;
+    left: 16px;
+  }
+
+  #contents .tablehead div {
+    font-size: 12px;
+  }
+
+  #contents .tablebody {
+    margin-top: 81px;
+  }
+
+  #contents .tablebody > div > div {
+    font-size: 12px;
+  }
+
+  .shift button {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+  td{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 4px;
+  }
+}

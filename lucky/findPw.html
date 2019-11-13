@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title></title>
+
+	<!--[if lt IE 9]>
+      <script src="./js/html5.js"></script>
+   <![endif]-->
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/form.css" rel="stylesheet">
+		<link href="./css/notosanskr.css" rel="stylesheet">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+
+
+<body>
+		<div id="wrap">
+		<div id="inWrap">
+			<h1><img src="img/logo.png" alt="logo" onclick="location.href='./login.html'"></h1>
+		<div id="formWrap">
+			<h3>FIND PASSWORD</h3>
+			<form method="post">
+				<div id="id-g" class="group">
+					<label for="id">ID</label>
+					<input type="text" id="id" name="id" placeholder="Please enter your id">
+				</div>
+				<div id="name-g" class="group">
+					<label for="first-name">Name</label>
+					<input type="text" id="first-name" name="name" maxlength="20" placeholder="First Name">
+					<input type="text" id="last-name" name="name" maxlength="20" placeholder="Last Name">
+				</div>
+				<div id="mail-g" class="group">
+					<label for="email">E-Mail</label>
+					<input type="text" placeholder="Plese enter your E-mail" id="email">
+					<input type="button" value="Send">
+					<input type="text" placeholder="Please enter certi number">
+				</div>
+				<input type="button" value="FIND ID">
+			</form>
+		</div>
+		</div>
+		<footer>
+			© 2019 LUCKY7. All rights reserved.
+		</footer>
+	</div>
+</body>
+</html>

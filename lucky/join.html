@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title></title>
+
+	<!--[if lt IE 9]>
+      <script src="./js/html5.js"></script>
+   <![endif]-->
+   <link href="./css/notosanskr.css" rel="stylesheet">
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+	<link href="./css/form.css" rel="stylesheet">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div id="wrap" class="join">
+		<div id="inWrap">
+			<h1><img src="img/logo.png" alt="logo" onclick="location.href='./login.html'"></h1>
+		<div id="formWrap">
+			<h3>JOIN</h3>
+			<div class="selconbox">
+              <div class="selcon">
+                <div><span>Country code <span>▼</span></span></div>
+              </div>
+              <div class="conlst">
+                <div>
+                  <img src="./img/countries/USA.png" alt=""><span>USA +1</span>
+                </div>
+                <div>
+                  <img src="./img/countries/Malaysia.png" alt=""><span>MYS +60</span>
+                </div>
+                <div>
+                  <img src="./img/countries/philippines.png" alt=""><span>PHL +63</span>
+                </div>
+                <div>
+                  <img src="./img/countries/Taipei.png" alt=""><span>TAI +66</span>
+                </div>
+                <div>
+                  <img src="./img/countries/japan.png" alt=""><span>JPN +81</span>
+                </div>
+                <div>
+                  <img src="./img/countries/south-korea.png" alt=""><span>KOR +82</span>
+                </div>
+                <div>
+                  <img src="./img/countries/vietnam.png" alt=""><span>VNM +84</span>
+                </div>
+                <div>
+                  <img src="./img/countries/china.png" alt=""><span>CHN +86</span>
+                </div>
+              </div>
+            </div>
+			<form method="post">
+				<div id="id-g" class="group">
+					<label for="id">ID</label>
+					<input type="text" id="id" name="id" class="w70" placeholder="Please enter the ID you wand use.">
+					<input type="button" value="Check">
+					<div class="txt">This ID already exists.</div>
+				</div>
+				<div id="pw-g" class="group">
+					<label for="pw">Password</label>
+					<input type="password" id="pw" placeholder="Please enter the password you want to use.">
+					<div class="txt">OK!</div>
+					<input type="password" placeholder="Please enter the password again to use.">
+					<div class="txt">유효성검사 텍스트 들어감.</div>
+				</div>
+				<div id="txpw-g" class="group">
+					<label for="tx">TX Password</label>
+					<input type="password" id="tx" placeholder="Please enter the TX password you want to use.">
+					<div class="txt">OK!</div>
+					<input type="password" placeholder="Please enter the TX password again to use.">
+					<div class="txt">유효성검사 텍스트 들어감.</div>
+				</div>
+				<div id="name-g" class="group">
+					<label for="first-name">Name</label>
+					<input type="text" id="first-name" name="name" maxlength="20" placeholder="First Name">
+					<input type="text" id="last-name" name="name" maxlength="20" placeholder="Last Name">
+				</div>
+				<div id="mobile-g" class="group">
+					<label for="ph">Mobile</label>
+					<input type="text" id="country" placeholder="KOR +82" readonly>
+					<input type="text" id="ph" placeholder="Pleae enter your mobile number">
+				</div>
+				<div id="mail-g" class="group">
+					<label for="email">E-Mail</label>
+					<input type="text" placeholder="Plese enter your E-mail" id="email">
+					<input type="button" value="Send">
+					<input type="text" placeholder="Please enter certi number">
+				</div>
+				<input type="button" value="JOIN">
+			</form>
+		</div>
+		</div>
+		<footer>
+			© 2019 LUCKY7. All rights reserved.
+		</footer>
+	</div>
+	<script>
+    $(function() {
+      $('.selcon').on('click', function() {
+        $(this).parent().toggleClass('on');
+      });
+
+      $('.conlst > div').on('click', function() {
+        var country = $(this).html();
+
+        $(this).parent().parent().find('.selcon').children().children().remove();
+        $(this).parent().parent().find('.selcon').children().append(country);
+        $('.selconbox').removeClass('on');
+      });
+    });
+	</script>
+</body></html>
